@@ -48,8 +48,8 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
 
 <script>
 
-    var margin = {top: 10, right: 10, bottom: 20, left: 10},
-        width = 30 - margin.left - margin.right,
+    var margin = {top: 10, right: 5, bottom: 20, left: 5},
+        width = 20 - margin.left - margin.right,
         height = 360 - margin.top - margin.bottom;
 
     var min = Infinity,
