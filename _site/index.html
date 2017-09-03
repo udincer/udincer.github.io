@@ -27,7 +27,9 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div id="hello"></div>
+        <div class="woohoo" id="wrapwrapwrap">
+    <div id="hello"></div>
+</div>
 
 <h1 id="tevfik-umut-dincer">Tevfik Umut Dincer</h1>
 
@@ -38,17 +40,21 @@
   <li>github: udincer</li>
 </ul>
 
-<div id="hello"></div>
-
 <style>
 
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
-    #hello {
-    	margin: 0 auto;
-    }
+	.woohoo {
+	    width: 95%;
+	    margin: 0 auto;
+	}
+
+	#hello {
+	    display: table;
+	    margin: 0 auto;
+	}
 
     .box {
         font: 0px sans-serif;
@@ -81,7 +87,7 @@
 <script>
 
     var margin = {top: 10, right: 5, bottom: 20, left: 5},
-        width = 20 - margin.left - margin.right,
+        width = document.getElementById('wrapwrapwrap').clientWidth/30,
         height = 360 - margin.top - margin.bottom;
 
     var min = Infinity,
@@ -130,7 +136,7 @@
     }
 
     function randomizer(d) {
-        var k = d3.max(d) * .1;
+        var k = d3.max(d) * .2;
         return function(d) {
             return Math.max(min, Math.min(max, d + k * (Math.random() - .5)));
         };

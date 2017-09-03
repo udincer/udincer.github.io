@@ -2,7 +2,9 @@
 layout: default
 ---
 
-<div id="hello"></div>
+<div class="woohoo" id="wrapwrapwrap">
+    <div id="hello"></div>
+</div>
 
 # Tevfik Umut Dincer
 
@@ -11,7 +13,6 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
 - email: <span style="unicode-bidi:bidi-override; direction: rtl;"> ude.alcu<span style="display:none">hello@there.com</span>@recnid </span>
 - github: udincer
 
-<div id="hello"></div>
 
 <style>
 
@@ -19,9 +20,15 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
-    #hello {
-    	margin: 0 auto;
-    }
+	.woohoo {
+	    width: 95%;
+	    margin: 0 auto;
+	}
+
+	#hello {
+	    display: table;
+	    margin: 0 auto;
+	}
 
     .box {
         font: 0px sans-serif;
@@ -53,7 +60,7 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
 <script>
 
     var margin = {top: 10, right: 5, bottom: 20, left: 5},
-        width = 20 - margin.left - margin.right,
+        width = document.getElementById('wrapwrapwrap').clientWidth/30,
         height = 360 - margin.top - margin.bottom;
 
     var min = Infinity,
@@ -102,7 +109,7 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
     }
 
     function randomizer(d) {
-        var k = d3.max(d) * .1;
+        var k = d3.max(d) * .2;
         return function(d) {
             return Math.max(min, Math.min(max, d + k * (Math.random() - .5)));
         };
