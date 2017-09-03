@@ -19,6 +19,10 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
+    #hello {
+    	margin: 0 auto;
+    }
+
     .box {
         font: 0px sans-serif;
     }
