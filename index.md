@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![](assets/boxplots.png)
+<div id="hello"></div>
 
 # Tevfik Umut Dincer
 
@@ -119,7 +119,3 @@ Hi, I'm Tev. I'm a PhD student at UCLA in the Bioinformatics program, member of 
     }
 
 </script>
-
-<div id="hello"></div>
-
-aaa
